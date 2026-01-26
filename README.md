@@ -9,24 +9,35 @@ En este proyecto, tenemos como objetivo escoger un dataset de nuestra preferenci
 |------|-------------|
 | Brand & Model | Marca del vehículo junto con el modelo específico. |
 | Model Year | Año de fabricación del vehículo. |
-| Mileage | Kilometraje registrado del vehículo. |
+| Milage | Kilometraje registrado del vehículo. |
 | Fuel Type | Tipo de combustible que utiliza el vehículo (gasolina, diésel, eléctrico o híbrido). |
-| Engine Type | Tipo y especificaciones del motor, relacionadas con rendimiento y eficiencia. |
+| Engine | Tipo y especificaciones del motor, relacionadas con rendimiento y eficiencia. |
 | Transmission | Tipo de transmisión del vehículo (automática, manual u otra). |
-| Exterior Color | Color exterior del vehículo. |
-| Interior Color | Color del interior del vehículo. |
-| Accident History | Indica si el vehículo tiene historial de accidentes o daños previos. |
+| Ext_Col | Color exterior del vehículo. |
+| Int_Col | Color del interior del vehículo. |
+| Accident | Indica si el vehículo tiene historial de accidentes o daños previos. |
 | Clean Title | Especifica si el vehículo cuenta con un título limpio, relevante para su valor legal y de reventa. |
 | Price | Precio de venta del vehículo. |
 
-## 📝 Descripción de los Campos
+## 📊 Limpieza y Preparación de Datos
 
-- **Brand & Model**: Identifica la marca o fabricante del vehículo junto con su modelo específico.
-- **Model Year**: Año en que el vehículo fue fabricado, útil para evaluar depreciación y tecnología.
-- **Mileage**: Total de kilómetros recorridos; indicador del uso y desgaste del vehículo.
-- **Fuel Type**: Tipo de combustible que utiliza el vehículo.
-- **Engine Type**: Información sobre el motor, incluye
+Durante el desarrollo del proyecto se realizaron las siguientes tareas de limpieza y preprocesamiento de datos:
 
+### ✅ Features implementadas
+
+- **Eliminación de columnas innecesarias**
+  - Se eliminó la columna `clean_title` por no aportar valor al análisis.
+
+- **Tratamiento de valores nulos**
+  - En la columna `accident`, las celdas vacías fueron rellenadas con el valor `"None reported"` para mantener consistencia en los datos.
+
+- **Corrección de tipos de datos**
+  - Se realizó el cambio de tipado en las columnas:
+    - `milage`
+    - `price`
+  - Se eliminaron caracteres no numéricos como `$` y `,`, reemplazándolos por `.` cuando fue necesario, permitiendo su correcta conversión a valores numéricos.
+
+Estas transformaciones aseguran una mayor calidad de los datos y permiten un análisis más fiable y consistente.
 
 
 ## Demo
