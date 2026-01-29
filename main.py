@@ -7,8 +7,13 @@ st.set_page_config(
 )
 
 # Definir estructura de navegación
-pg = st.navigation([
+try:
+    pg = st.navigation([
     st.Page("pages/Inicio.py", title="Inicio",default=True),
-    st.Page("pages/Dashboard.py", title="Dashboard"),
+    st.Page("pages/Prediccion.py", title="Predicciones del modelo"),
 ])
-pg.run()
+    pg.run()
+except Exception as e:
+    st.error("Error al renderizar las vistas de Streamlit.")
+    if st.button("Reintentar"):
+        st.experimental_rerun()
