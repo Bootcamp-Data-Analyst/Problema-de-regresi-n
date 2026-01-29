@@ -11,6 +11,7 @@ try:
     pg = st.navigation([
     st.Page("pages/Inicio.py", title="Inicio",default=True),
     st.Page("pages/Prediccion.py", title="Predicciones del modelo"),
+    st.Page("pages/Dashboard.py", title="Nuestro Dashboard"),
 ])
     pg.run()
 except Exception as e:
