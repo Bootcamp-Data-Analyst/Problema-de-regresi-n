@@ -33,7 +33,7 @@ class PostProcesador:
 # --- CARGA DEL MODELO Y POSTPROCESADOR ---
 
 try:
-    pipeline = joblib.load('rf_model.pkl')
+    pipeline = joblib.load('model.pkl')
     st.success("Modelo cargado correctamente")
 except Exception as e:
     st.error(f"Error al cargar el modelo: {e}")
