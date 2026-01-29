@@ -40,7 +40,7 @@ except Exception as e:
     st.stop()
 
 try:
-    post = joblib.load('post.pkl')
+    post = joblib.load('model.pkl')
     st.success("Postprocesador cargado correctamente")
 except Exception as e:
     st.error(f"Error al cargar el postprocesador: {e}")
