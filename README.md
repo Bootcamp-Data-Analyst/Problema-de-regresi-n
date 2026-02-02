@@ -122,8 +122,6 @@ La aplicación incluye:
 - Predicción del precio en tiempo real utilizando el modelo entrenado
 - Visualización de datos y resultados de forma interactiva  
 
-Este despliegue convierte el proyecto en una **solución completa de principio a fin**, más allá del análisis en notebooks.
-
 ---
 
 ### 🛠 Tecnologías y herramientas utilizadas
@@ -144,8 +142,6 @@ Este proyecto demuestra:
 - Buen criterio en la limpieza y preparación del dato
 - Capacidad de extraer conclusiones útiles a partir del EDA
 - Habilidad para convertir un modelo en una aplicación funcional  
-
-Está especialmente orientado a **portfolio profesional**, mostrando tanto competencias técnicas como capacidad de comunicación y presentación de resultados.
 
 ---
 
