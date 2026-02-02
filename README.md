@@ -39,6 +39,124 @@ Durante el desarrollo del proyecto se realizaron las siguientes tareas de limpie
 
 Estas transformaciones aseguran una mayor calidad de los datos y permiten un análisis más fiable y consistente.
 
+## 📌 Informe Ejecutivo
+
+### 🎯 Objetivo del proyecto
+El objetivo principal de este proyecto es **desarrollar un modelo predictivo capaz de estimar el precio de un vehículo** a partir de sus características principales, aplicando un flujo completo de análisis de datos y machine learning.
+
+El proyecto se plantea como una **simulación realista de un caso de negocio**, en el que una empresa del sector automovilístico podría necesitar:
+- Estimar precios de mercado
+- Comparar vehículos con características similares
+- Apoyar decisiones de compra, venta o tasación
+
+Además, el proyecto busca demostrar competencias técnicas clave en **Data Analysis y Data Science**, desde la exploración inicial de los datos hasta el despliegue de una solución funcional.
+
+---
+
+### 📊 Descripción del dataset y preparación de los datos
+El dataset utilizado contiene información sobre vehículos, incluyendo variables tanto **numéricas** como **categóricas**, entre ellas:
+- Precio del vehículo  
+- Año de fabricación  
+- Kilometraje  
+- Potencia y cilindrada del motor  
+- Marca  
+- Tipo de transmisión  
+- Color exterior, entre otras  
+
+Uno de los principales retos del proyecto fue la **calidad del dato**, ya que el dataset original presentaba:
+- Valores faltantes
+- Valores codificados como `-1`
+- Inconsistencias en variables categóricas
+- Distribuciones muy sesgadas en algunas variables numéricas  
+
+Durante la fase de *data cleaning* se llevaron a cabo tareas como:
+- Limpieza y estandarización de variables categóricas
+- Tratamiento específico de valores inválidos (`-1`) para evitar sesgos
+- Conversión de tipos de datos
+- Preparación del dataset para su uso en análisis y modelado  
+
+El resultado final es un **dataset limpio, coherente y listo para el análisis exploratorio y la modelización**.
+
+---
+
+### 🔍 Análisis Exploratorio de Datos (EDA)
+El Análisis Exploratorio permitió comprender en profundidad el comportamiento del precio y su relación con otras variables del dataset.
+
+Durante esta fase se analizaron:
+- Distribuciones de variables numéricas clave como precio, kilometraje, potencia y cilindrada
+- Relación entre el precio y el año del vehículo
+- Impacto del kilometraje en la depreciación
+- Diferencias de precio entre marcas y tipos de transmisión
+- Presencia de outliers y su influencia en los resultados  
+
+Este análisis permitió **extraer insights relevantes**, como:
+- Tendencias claras de depreciación según año y kilometraje
+- Diferencias significativas de precio entre marcas
+- Variables con mayor capacidad explicativa sobre el precio  
+
+Los resultados del EDA fueron fundamentales para **guiar la selección de variables** utilizadas posteriormente en el modelo de machine learning.
+
+---
+
+### 🤖 Modelado y Machine Learning
+Una vez comprendidos los datos, se desarrolló un modelo de **regresión supervisada** para predecir el precio del vehículo.
+
+El proceso de modelado incluyó:
+- Selección de variables relevantes basadas en el EDA
+- Codificación de variables categóricas
+- División del dataset en conjuntos de entrenamiento y test
+- Entrenamiento de modelos de regresión
+- Evaluación del rendimiento mediante métricas de error (MAE y RMSE)
+
+Tras comparar los resultados, se seleccionó el modelo con **mejor equilibrio entre precisión y capacidad de generalización**.  
+El modelo final fue serializado en un archivo `model.pkl` para su reutilización y despliegue.
+
+---
+
+### 🖥 Despliegue y aplicación interactiva
+Como parte final del proyecto, se desarrolló una **aplicación web con Streamlit** que permite llevar el modelo a un entorno práctico y accesible.
+
+La aplicación incluye:
+- Una estructura de navegación clara (inicio, predicciones y dashboard)
+- Un formulario para introducir las características de un vehículo
+- Predicción del precio en tiempo real utilizando el modelo entrenado
+- Visualización de datos y resultados de forma interactiva  
+
+Este despliegue convierte el proyecto en una **solución completa de principio a fin**, más allá del análisis en notebooks.
+
+---
+
+### 🛠 Tecnologías y herramientas utilizadas
+- **Python**
+- **Pandas** y **NumPy**
+- **Matplotlib** y **Seaborn**
+- **Scikit-learn**
+- **Jupyter Notebook**
+- **Streamlit**
+- **Pickle**
+
+---
+
+### 💡 Valor añadido del proyecto
+Este proyecto demuestra:
+- Capacidad para abordar un problema real desde un enfoque analítico
+- Dominio del flujo completo de un proyecto de datos
+- Buen criterio en la limpieza y preparación del dato
+- Capacidad de extraer conclusiones útiles a partir del EDA
+- Habilidad para convertir un modelo en una aplicación funcional  
+
+Está especialmente orientado a **portfolio profesional**, mostrando tanto competencias técnicas como capacidad de comunicación y presentación de resultados.
+
+---
+
+### 🚀 Líneas de mejora y trabajo futuro
+Como posibles mejoras del proyecto se plantean:
+- Feature engineering avanzado para mejorar el rendimiento del modelo
+- Comparación con modelos más complejos (Random Forest, Gradient Boosting, XGBoost)
+- Inclusión de métricas explicativas del modelo en la app
+- Despliegue en la nube para acceso público
+
+
 
 ## Demo
 
